@@ -1,0 +1,114 @@
+% \documentclass[9pt, aspectratio=169]{beamer}
+\documentclass[9pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{epstopdf}
+%\usepackage[table]{xcolor}
+% \usepackage{case}
+%\usepackage{matlab}
+\usefonttheme[onlymath]{serif}
+
+
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+
+% \usetheme{AnnArbor}
+% \usecolortheme{default}
+
+\usepackage{caption}
+\captionsetup{font=footnotesize}
+
+
+%\AddToHook{shipout/foreground}{
+%    \ifnum\thepage>1
+%        \begin{tikzpicture}[overlay, remember picture]
+%            \node[text=black, rotate=0, scale=1, opacity=0.1] at (current page.center) 
+%                {\includegraphics[width=0.5\paperwidth]{logo.png}};
+%        \end{tikzpicture}
+%    \fi
+%}
+
+
+
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[Underwater Vehicles]{Underwater Vehicles}
+\subtitle{Modeling, }
+
+% \subtitle{2D model}
+
+\author[D.C. Vu] % (optional) 
+{Duc Cuong Vu}
+
+\institute [MEG, MoCAR, HUST]
+{
+  \textit{Motion Control and Applied Robotics Laboratory,}\\
+  School of Electrical and Electronic Engineering,\\
+  Hanoi University of Science and Technology\\
+}
+
+\date[Ver. 1.0, \today] {Version: 1.0\\ Last updated: \today}
+
+\logo{\includegraphics[height=0.8cm]{logo}}
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+\fontsize{9}{13}\selectfont
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+
+
+
+
+\input{s1_introduction.tex}
+\input{s2_fundamental.tex}
+\input{s3_6DOF.tex}
+\input{s4_ocean.tex}
+\input{s5_environmental.tex}
+\input{s6_ODIN.tex}
+\input{s7_control.tex}
+\input{s8_sim.tex}
+\input{s9_quasi.tex}
+\input{s10_tracking.tex}
+
+
+
+\begin{frame}{Thanks for your attention! Any questions?}%% 1
+    \begin{center}
+        \Huge Hope you slept comfortably!
+    \end{center}
+\end{frame}
+
+
+\end{document}

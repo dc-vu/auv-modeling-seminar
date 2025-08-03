@@ -1,0 +1,161 @@
+\section{Introduction}
+% =========================================
+% =========================================
+
+
+
+
+\begin{frame}{Introduction}
+	\framesubtitle{Handbooks and references}
+	UUV - Unmanned Underwater vehicle
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.75\linewidth]{img/6DOF motion AUV}
+		\caption{6-DOF motion variables for a UUV/AUV}
+		\label{fig: UUV}
+	\end{figure}
+	
+	Handbooks \& References:
+	\begin{itemize}
+		\item Thor I. Fossen, \textit{Handbook of Marine Craft Hydrodynamics and Motion Control}, Wiley, 2011.
+		\item Thor I. Fossen, \textit{Guidance and Control of Ocean Vehicles}, Wiley, 1994.
+	\end{itemize}
+	
+\end{frame}
+
+% =========================================
+% =========================================
+
+
+
+
+\begin{frame}{Introduction}
+	\framesubtitle{Handbooks and references}
+	\begin{tikzpicture}[remember picture,overlay]
+		% \node[fill=blue!30, text=white, font=\large, rounded corners] 
+		\node at (current page.north east) [xshift=-11cm, yshift=-3.5cm] 
+		{\includegraphics[width=0.23\linewidth]{img/handbook.png}};
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		% \node[fill=blue!30, text=white, font=\large, rounded corners] 
+		\node at (current page.north east) [xshift=-8cm, yshift=-3.5cm] 
+		{\includegraphics[width=0.23\linewidth]{img/handbook1.png}};
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		% \node[fill=blue!30, text=white, font=\large, rounded corners] 
+		\node at (current page.north east) [xshift=-5cm, yshift=-3.5cm] 
+		{\includegraphics[width=0.23\linewidth]{img/handbook2.png}};
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		% \node[fill=blue!30, text=white, font=\large, rounded corners] 
+		\node at (current page.north east) [xshift=-2cm, yshift=-3.5cm] 
+		{\includegraphics[width=0.23\linewidth]{img/handbook4.png}};
+	\end{tikzpicture}
+	
+	
+	
+	\vspace{2cm}
+	
+	Handbooks \& References:
+	\begin{itemize}
+		\item Review articles, Research articles, Handbook, ...
+		\item IEEE Explore, Springer, Elserview, Wiley, Taylor \& Francis, ...
+	\end{itemize}
+	
+\end{frame}
+
+% =========================================
+% =========================================
+
+
+
+
+\begin{frame}{Introduction}
+	\framesubtitle{Automatic Weather Routing}
+	\centering
+	\scalebox{0.8}{\input{tikz/control overall}}
+\end{frame}
+
+
+% =========================================
+% =========================================
+
+\begin{frame}{Introduction}
+	\framesubtitle{Model classifications}
+	Degree of Freedom classifications under purpose
+	\begin{itemize}
+		\item 1 DOF $\to$ model can be used to design the forward speed controller and heading autopilots and damping system
+		\item 3 DOFs $\to$ describe the horizontal plane, longitudinal, and lateral models.
+		\item 4 DOFs $\to$ describe the motion in the horizontal plane with heading autopilots and system damping
+		\item 6 DOFs $\to$ describe the fully coupled equation of motion used for simulation and prediction.
+	\end{itemize}
+	
+	Naval Architecture
+	\begin{itemize}
+		\item Maneuvering theory: moving at positive constant speed in calm water
+		\item  Seeking theory: motion of ships at zero or constraint speed in waves, which can be analyzed. The hydrodynamic coefficient and wave forces are computed as a function
+	\end{itemize}
+\end{frame}
+
+% =========================================
+% =========================================
+
+\begin{frame}{Introduction}
+	\framesubtitle{Tools and Toolboxs}
+	\begin{tikzpicture}[remember picture,overlay]
+		% \node[fill=blue!30, text=white, font=\large, rounded corners] 
+		\node at (current page.north east) [xshift=-4.5cm, yshift=-3cm] 
+		{\includegraphics[width=0.7\linewidth]{img/mss toolbox.png}};
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		% \node[fill=blue!30, text=white, font=\large, rounded corners] 
+		\node at (current page.north east) [xshift=-4.5cm, yshift=-6.5cm] 
+		{\includegraphics[width=0.7\linewidth]{img/simscape.png}};
+	\end{tikzpicture}
+	
+	
+	
+	Marine Systems Simulator (MSS) Toolbox \footnote{T. I. Fossen and T. Perez (2004). Marine Systems Simulator (MSS). URL: https://github.com/cybergalactic/MSS} 
+	
+	\vspace{3cm}
+	
+	MATLAB Simscape Multibody \footnote{https://github.com/mathworks-robotics/modeling-and-simulation-of-an-AUV-in-Simulink} 
+\end{frame}
+
+% =========================================
+% =========================================
+
+
+\begin{frame}{Introduction}
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		% \node[fill=blue!30, text=white, font=\large, rounded corners] 
+		\node at (current page.north east) [xshift=-3.8cm, yshift=-3cm] 
+		{\includegraphics[width=0.7\linewidth]{img/6DOF motion AUV.png}};
+	\end{tikzpicture}
+	
+	\vspace{2cm}
+	
+	Overview of this seminar
+	\begin{itemize}
+		\item Fundamental knowledge 
+		\item 6-DOF model of a Rigid Body
+		\item Ocean dynamics
+		\item Environmental disturbances
+		\item An example of the ODIN
+		\item Guidance - Navigation - Control
+		\item Numerical simulations
+		\item Quasi-Physical Simulation for UV motion control
+		\item An excample for GNC-integrated Quasi-Physical simulation
+	\end{itemize}
+\end{frame}
+
+
+
+
+% =========================================
+% =========================================
